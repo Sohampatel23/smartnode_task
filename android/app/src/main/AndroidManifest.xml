@@ -1,4 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- MQTT (Phase 1) needs internet access; UDP local sync (Phase 3) and
+         the Wi-Fi-vs-mobile connectivity check need network/Wi-Fi state. -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
     <application
         android:label="smartnode_task"
         android:name="${applicationName}"

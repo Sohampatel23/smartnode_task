@@ -45,5 +45,11 @@
 	<true/>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>Used to sync inventory changes with other devices on the same Wi-Fi when the internet is unavailable.</string>
+	<key>NSBonjourServices</key>
+	<array>
+		<string>_inventorysync._udp</string>
+	</array>
 </dict>
 </plist>
